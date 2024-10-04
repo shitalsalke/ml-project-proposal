@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Title and Team Information
-st.title('Project Proposal - Group 42')
+st.title('CS7641: Project Proposal - Group 42')
 st.header('Tumor Detection and Classification')
 st.markdown('**Team Members:** Shital Salke, Jenny Lin, Koushika Kesavan, Hima Varshini Parasa')
 st.markdown('**Institution:** Georgia Institute of Technology')
@@ -15,7 +15,7 @@ Several studies highlight the effectiveness of modern techniques. A YOLOv7-based
 
 The dataset for this project, “Brain Tumor (MRI scans),” sourced from Kaggle, contains 3,264 MRI images across three tumor types: Gliomas, Meningiomas, and Pituitary tumors, with a balanced distribution of images in various orientations.
 """)
-st.markdown('[Link to the Dataset](https://www.kaggle.com/datasets/rm1000/brain-tumor-mri-scans/data)')
+st.markdown('Link to the Dataset: [https://www.kaggle.com/datasets/rm1000/brain-tumor-mri-scans/data](https://www.kaggle.com/datasets/rm1000/brain-tumor-mri-scans/data)')
 
 # Problem Definition Section
 st.header('2. Problem Definition')
@@ -55,21 +55,24 @@ st.write("""
 
 # Potential Results and Discussion Section
 st.header('4. (Potential) Results and Discussion')
+st.subheader('ML Metrics')
 st.write("""
-**ML Metrics**:
 We will evaluate our results using the following metrics [7]:
 - **F1 Score**: A balanced measure of precision and recall, crucial in clinical settings where false positives and negatives have serious implications.
 - **AUC-ROC**: Represents the model's discriminative power across all classification thresholds.
 - **Confusion Matrix**: Provides detailed performance insights for each tumor type.
 - **Cross-Validation**: K-fold cross-validation ensures model consistency and generalizability across diverse patient data.
-
-**Project Goals**:
+""")
+st.subheader('Project Goals')
+st.write("""
 - Detect and classify brain tumors through MRI scans.
 - Reduce false positives and detect tumors early.
 - Generate consistent accuracies for different types of brain tumors.
 - Generalize well to unseen MRI scans.
+""")
 
-**Expected Results**:
+st.subheader('Expected Results')
+st.write("""
 - **F1 Score**: 97-99%
 - **AUC-ROC**: Above 0.95
 - **Confusion Matrix**: High positive rates for various tumor types
@@ -78,12 +81,12 @@ We will evaluate our results using the following metrics [7]:
 
 # Gantt Chart Section
 st.header('5. Gantt Chart')
-st.image('./gantt.png')  # Replace './gantt.png' with the actual path to your Gantt chart image
+st.image('./gantt.png')
 
 # Contribution Table Section
 st.header('6. Contribution Table')
 st.write("""
-| **Team Member** | **Proposal Contributions** |
+| **Team Member** | **Contributions** |
 |-----------------|----------------------------|
 | **Koushika**    | Introduction and Background, Problem Definition, References, Brainstorming project proposal ideas, Recording the video presentation |
 | **Jenny**       | Methods, IEEE Citations, Brainstorming project proposal ideas, Putting together Google slides for video presentation |
