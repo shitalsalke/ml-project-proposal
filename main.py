@@ -1,7 +1,8 @@
 import streamlit as st
 
 # Title and Team Information
-st.title('CS7641: Project Proposal - Group 42')
+st.title('CS7641: Project Proposal')
+st.subheader('(Group 42)')
 st.header('Tumor Detection and Classification')
 st.markdown('**Team Members:** Shital Salke, Jenny Lin, Koushika Kesavan, Hima Varshini Parasa')
 st.markdown('**Institution:** Georgia Institute of Technology')
